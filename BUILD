@@ -1,4 +1,5 @@
-cc_library(
+cc_binary(
     name = "hello",
-    srcs = ["hello.cc"]
-    )
+    srcs = ["hello.cc"],
+    deps = ["@spdlog"]
+)
